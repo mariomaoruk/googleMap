@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!--<ion-title>{{ museum.state }}</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card padding>
+   <!-- <h3>Museum name : {{ museum.name }}</h3>
+    <p>Location : {{ museum.state }}</p> -->
+  </ion-card>
+  <ion-button color="success" (click)="displayGoogleMap()">Add Location</ion-button>
+  <div #map id="map"></div>
+</ion-content>
